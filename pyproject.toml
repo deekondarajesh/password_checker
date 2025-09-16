@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "password-checker"
+version = "0.1.0"
+description = "A simple password strength checker tool"
+authors = ["Rajesh Deekonda<deekondarajesh16@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4"
+ruff = "^0.6"
+black = "^24.8"
+mypy = "^1.11"
+
+[tool.pyright]
+useLibraryCodeForTypes = true
+
+[tool.ruff]
+select = ['E', 'W', 'F', 'I', 'B', 'C4', 'ARG', 'SIM']
+ignore = ['W291', 'W292', 'W293']
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+password-checker = "password_checker.main:main"
