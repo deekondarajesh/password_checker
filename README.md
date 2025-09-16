@@ -1,6 +1,6 @@
 # Password Checker
 
-A simple Python tool that checks the strength of a password.
+A Python tool that checks the strength of a password.
 
 # Features
 - Detects weak, medium, and strong passwords
@@ -20,3 +20,4 @@ python -m venv .venv
 # Mac/Linux:
 source .venv/bin/activate
 pip install pytest
+
